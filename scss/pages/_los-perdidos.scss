@@ -1,0 +1,68 @@
+/*pagina Los perdidos */
+$color_1: $black;
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: $blue-soft;
+
+.container1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 290px));
+	grid-gap: 1rem;
+	padding: 2rem;
+	justify-content: center;
+	box-shadow: 0 1px 1px #000;
+	.img-gallery {
+		margin: 0px;
+		padding: 10px;
+	}
+}
+.img-gallery {
+	object-fit: cover;
+	background-position: top;
+	background-size: cover;
+	height: 300px;
+	width: 300px;
+	box-shadow: 0 2px 10px #000;
+	cursor: pointer;
+	transition: all 0.2s;
+	&:hover {
+		box-shadow: none;
+		transform: scale(1.1);
+		margin: 20px;
+	}
+}
+.titulos-perros {
+	display: flex;
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: $font-family_1;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor-adopcion-principal {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 50px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $background-color_1;
+	color: $color_1;
+	height: 450px;
+	width: 100%;
+	font-size: 30px;
+	border-bottom: 2px #126b8f solid;
+	h1 {
+		border-bottom: solid $nice-green 5px;
+	}
+	p {
+		width: 70%;
+		padding-top: 20px;
+	}
+}
+@media (max-width: 600px) {
+	.contenedor-adopcion-principal {
+		font-size: 19px;
+		padding: 20px;
+	}
+}

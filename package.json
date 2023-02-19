@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-pacma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emasoad/Proyecto-Pacma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emasoad/Proyecto-Pacma/issues"
+  },
+  "homepage": "https://github.com/emasoad/Proyecto-Pacma#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

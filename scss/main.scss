@@ -1,0 +1,35 @@
+
+/* Base */
+@import './base/base';
+
+/* Fuentes, colores y tamaños*/
+@import './variables/fonts';
+@import './variables/colors';
+
+/* FOOTER */
+@import './components/footer';
+
+/* HEADER */
+@import './components/header';
+
+/* PAGINAS */
+@import './pages/index';
+@import './pages/perros-en-adopcion';
+@import './pages/como-adoptar';
+@import './pages/guia-mascotera';
+@import './pages/los-perdidos';
+@import './pages/donar';
+
+/* Utilidades */
+@import './utils/buttons';
+@import './utils/login-form';
+
+/* Components */
+@import './components/footer';
+@import './components/header';
+@import './components/heading';
+
+/* Media Query */
+@import './base/media-query';
+
+/* Mixins*/

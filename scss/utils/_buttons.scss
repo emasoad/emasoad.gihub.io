@@ -1,0 +1,33 @@
+/* Button principal */
+
+$color_1: $white;
+
+.btn {
+	font-size: 1.7rem;
+	display: inline-block;
+	background: $main;
+	color: $color_1;
+	box-shadow: $box-shadow;
+	border-radius: 5rem;
+	padding: 0.9rem 3rem;
+	margin-top: 1rem;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 0%;
+		background: $orange-soft;
+		z-index: -1;
+		transition: 0.3s linear;
+		left: 0;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+}

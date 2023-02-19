@@ -1,0 +1,134 @@
+.main-donar {
+    padding-top: 200px;
+    height: 700px;
+    background-color: $white;
+  }
+  
+  .donate-form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .donate-form legend {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $black;
+    padding-left: 390px;
+  }
+  
+  .donate-form ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .donate-form li {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .donate-form li label {
+    color: $white;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+  /* FORM AMOUNTS LAYOUT--------------------------------------------------------------------*/
+  .amounts {
+    overflow: auto;
+    zoom: 1;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .amounts li {
+    display: block;
+    width: 44%;
+    float: left;
+    clear: none;
+    margin: 10px 3%;
+  }
+  
+  .amounts li input[type=radio] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .amounts li label,
+  .amounts li#amount_total_other {
+    background-color: #2187C7;
+    background-image: linear-gradient(bottom, rgba(41, 53, 183, 0) 0%, #b9bace 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    outline: 0 none;
+    padding: 12px 1%;
+    text-align: center;
+    width: 98%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  }
+  
+  .amounts li label:hover,
+  .amounts li#amount_total_other:hover {
+    background-color: $main;
+    background-image: linear-gradient(bottom, #a4aaeb 0%, rgba(41, 53, 183, 0) 100%);
+  }
+  
+  .amounts li input[type=radio].checked + label,
+  .amounts li#amount_total_other.checked {
+    color: #030737;
+    background: #fad000;
+    border: 0;
+  }
+  
+  .amounts li#amount_total_other {
+    width: 36% !important;
+    padding: 12px 4%;
+    margin: 10px 3%;
+  }
+  
+  .amounts #amount_total_other label {
+    display: none;
+  }
+  
+  .amounts #amount_total_other span.amount-currency {
+    display: inline-block;
+    width: 6%;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  .amounts #amount_total_other input#field-amount_text {
+    display: inline-block;
+    width: 90%;
+    font-size: 20px;
+    line-height: 28px;
+    height: 24px;
+    padding: 0 2%;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .amounts li#amount_total_other.checked input#field-amount_text {
+    color: #878cc4;
+  }

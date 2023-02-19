@@ -1,0 +1,31 @@
+$font-family_1: "Product Sans", Arial, sans-serif;
+
+* {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: 0.2s linear;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 4rem;
+	&::-webkit-scrollbar {
+		width: 1rem;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: var(--main);
+		border-radius: 5rem;
+	}
+}
+section {
+	padding: 8rem 7%;
+}

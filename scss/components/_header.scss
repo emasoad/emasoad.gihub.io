@@ -1,0 +1,46 @@
+$color_1: $black;
+$color_2: $main;
+$background-color_1: $blue-soft;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: $white;
+	box-shadow: $box-shadow;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	.logo {
+		font-size: 2.5rem;
+		font-weight: bolder;
+		color: $color_1;
+	}
+	.navbar {
+		a {
+			font-size: 1.7rem;
+			color: $color_1;
+			margin: 0 1rem;
+			&:hover {
+				color: $color_2;
+				background-color: $background-color_1;
+				padding: 16px;
+				border-radius: 50px;
+			}
+		}
+	}
+	.icons {
+		div {
+			font-size: 2.5rem;
+			margin-left: 1.7rem;
+			cursor: pointer;
+			color: $color_1;
+			&:hover {
+				color: $color_2;
+			}
+		}
+	}
+}
